@@ -34,8 +34,8 @@ This is a solution to the **[Testimonials Grid Section](https://www.frontendment
 
 ### Links
 
-- Solution URL: **[Frontend Mentor Solution]()**
-- Live Site URL: **[Solution Deploy]()**
+- Solution URL: **[Frontend Mentor Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-html-scss-86EVpZFL35)**
+- Live Site URL: **[Solution Deploy](https://fem-testimonials-grid-section.vercel.app/)**
 
 ## My process
 
