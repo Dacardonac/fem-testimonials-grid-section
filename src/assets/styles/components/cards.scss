@@ -1,0 +1,119 @@
+.content {
+  max-width: 23.438rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &__card {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 1.625rem 2rem 2rem 2rem;
+    max-width: 20.438rem;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2.5rem 3.75rem 3.125rem -2.938rem hsla(217, 19%, 35%, 0.2474);
+
+      &-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.125rem;
+
+        &-img {
+          margin-right: 1.063rem;
+          width: 28px;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+
+      &-name {
+        font-size: 0.813rem;
+        line-height: 18px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-verified {
+        font-size: 0.688rem;
+        line-height: 11px;
+        color: var(--light-gray-50);
+      }
+
+      &-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      &-paragraph {
+        font-size: 0.813rem;
+        color: var(--light-gray-70);
+        font-weight: 500;
+        line-height: 18px;
+      }
+  }
+
+  &__card--purple {
+    background-color: var(--moderate-violet);
+    color: var(--white);
+
+    &-image {
+      &-img {
+        border: 2px solid var(--violet-border);
+      }
+    }
+
+    &-title {
+      margin-bottom: 2.5rem;
+    }
+
+    &-paragraph {
+      padding-right: 1rem;
+    }
+  }
+
+  &__card--gray {
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--white);
+
+    &-title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__card--white {
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+
+    &-title {
+      margin-bottom: 1rem;
+    }
+
+    &-verified {
+      color: var(--very-dark-grayish-blue);
+    }
+
+    &-paragraph {
+      padding-right: 1rem;
+      color: var(--very-dark-grayish-blue);
+
+      &-paddingnone {
+        padding: 0;
+      }
+    }
+  }
+
+  &__card--black {
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--light-grayish-blue);
+
+    &-image {
+      &-img {
+        border: 2px solid var(--violet-border);
+      }
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+    }
+  }
+}

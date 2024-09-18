@@ -1,0 +1,7 @@
+@use '../utils/mixins' as *;
+
+body {
+  @include barlow-semi-condensed;
+  background-color: var(--light-grayish-blue);
+  padding: 71px 24px 0 24px;
+}

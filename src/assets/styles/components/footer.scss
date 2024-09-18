@@ -1,12 +1,15 @@
-@use 'utils/mixins' as *;
+@use '../utils/mixins' as *;
 
 .footer {
   @include barlow-semi-condensed;
-  
+  margin: 20px;
+  font-weight: 600;
+
   &__attribution {
-    font-size: 11px; text-align: center;
+    font-size: 0.813rem;
+    text-align: center;
   }
   &__link {
-    color: hsl(228, 45%, 44%);
+    color: var(--links);
   }
 }
