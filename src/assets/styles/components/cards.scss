@@ -143,15 +143,15 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .content {
-    max-width: 1440px;
+    max-width: 90rem;
     display: grid;
     grid-template-columns: 3 1fr 1fr 1fr;
     grid-template-rows: auto;
     justify-content: center;
-    column-gap: 30px;
-    row-gap: 24px;
+    column-gap: 1.875rem;
+    row-gap: 1.5rem;
     grid-template-areas:
     "--purple --purple --gray --white-two"
     "--white --black --black --white-two";
@@ -161,23 +161,23 @@
     }
 
     &__card--purple {
-      max-width: 540px;
+      max-width: 33.75rem;
       grid-area: --purple;
     }
     &__card--gray {
-      max-width: 255px;
+      max-width: 15.938rem;
       grid-area: --gray;
     }
     &__card--white-two {
-      max-width: 255px;
+      max-width: 15.938rem;
       grid-area: --white-two;
     }
     &__card--black {
-      max-width: 540px;
+      max-width: 33.75rem;
       grid-area: --black;
     }
     &__card--white {
-      max-width: 255px;
+      max-width: 15.938rem;
       grid-area: --white;
     }
   }
