@@ -11,18 +11,21 @@
     height: auto;
     border-radius: 8px;
     box-shadow: 2.5rem 3.75rem 3.125rem -2.938rem hsla(217, 19%, 35%, 0.2474);
+    user-select: text;
 
       &-image {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-bottom: 1.125rem;
+        cursor: pointer;
 
         &-img {
           margin-right: 1.063rem;
           width: 28px;
           height: auto;
           border-radius: 50%;
+          user-select: none;
         }
       }
 
@@ -102,6 +105,28 @@
     }
   }
 
+  &__card--white-two {
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+
+    &-title {
+      margin-bottom: 1rem;
+    }
+
+    &-verified {
+      color: var(--very-dark-grayish-blue);
+    }
+
+    &-paragraph {
+      padding-right: 1rem;
+      color: var(--very-dark-grayish-blue);
+
+      &-paddingnone {
+        padding: 0;
+      }
+    }
+  }
+
   &__card--black {
     background-color: var(--very-dark-blackish-blue);
     color: var(--light-grayish-blue);
@@ -114,6 +139,46 @@
 
     &-title {
       margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .content {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 3 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 24px;
+    grid-template-areas:
+    "--purple --purple --gray --white-two"
+    "--white --black --black --white-two";
+
+    &__card {
+      margin: 0 auto;
+    }
+
+    &__card--purple {
+      max-width: 540px;
+      grid-area: --purple;
+    }
+    &__card--gray {
+      max-width: 255px;
+      grid-area: --gray;
+    }
+    &__card--white-two {
+      max-width: 255px;
+      grid-area: --white-two;
+    }
+    &__card--black {
+      max-width: 540px;
+      grid-area: --black;
+    }
+    &__card--white {
+      max-width: 255px;
+      grid-area: --white;
     }
   }
 }
